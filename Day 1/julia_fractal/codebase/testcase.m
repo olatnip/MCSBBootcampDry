@@ -14,12 +14,12 @@
 ntMax = 22;
 a=(0+1i)*ones(1,ntMax);
 b=(-1-1i)*ones(1,ntMax);
-c=[a;b];
-known_answer=c(1:ntMax+1);
+c=[a;b]
+known_answer=c(1:ntMax+1)
 
 % then we can compare the output of the program at these parameters
 
-[~,zTrajectory]=followz(0+1i,0-1i);
+[~,zTrajectory]=follow_z(0+1i,0-1i);
 disp('Output is')
 disp(zTrajectory')
 
