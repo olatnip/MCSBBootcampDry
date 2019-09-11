@@ -33,3 +33,17 @@ dxdt = @(t,x) [ dAdt(x(1),x(2),x(3),x(4));
 figure(1); clf; hold on; box on;
 plot(T,X,'LineWidth',2);
 plot(T,sum(X,2),'--k','LineWidth',2);
+
+
+%%
+
+KTotMin=1e-3;
+KTotMax=1e2;
+steppers=10;
+index=linspace(log(KTotMin),log(KTotMax),steppers);
+
+for i=1:steppers-1
+    
+    
+    
+end
